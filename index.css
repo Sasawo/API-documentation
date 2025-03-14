@@ -1,0 +1,60 @@
+body {
+    background-image: url(bg.jpg);
+    background-size: 100%;
+    filter: grayscale(100%);
+    perspective: 500px;
+}
+
+@font-face {
+    font-family: 'myCustomFont';
+    src: url(PlaywriteGBS-Regular.ttf);
+}
+
+.appear {
+    display: none;
+}
+
+.appear:target {
+    color: white;
+    display: block;
+}
+
+p {
+    font-family: 'myCustomFont';
+    text-align: center;
+    color: darkgreen;
+    transition: color 2s;
+}
+
+p:hover {
+    color: white;
+}
+
+ul {
+    background-color: thistle;
+    border: 5px;
+    border-style: solid;
+    border-color: blue;
+    padding-left: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    transform: rotateY(0deg);
+    transition: transform 5s;
+}
+
+ul:hover {
+    background-color: hotpink;
+    transform: rotateY(360deg);
+}
+
+li > .first_list > #first_line {
+    color: white;
+}
+
+ul:nth-child(2) {
+    color: maroon;
+}
+
+li[target="second_first_line"] {
+    color: white;
+}
